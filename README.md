@@ -1,6 +1,6 @@
 ## E-Commerce Starter project with Webiny Serverless Headless CMS, Next.js, and Stripe
 
-![Cover](/e-commerce-starter/cover.png)
+![Cover](/cover.png)
 
 In this tutorial, we will create a simple e-commerce website, where you can buy Swag
 from the best Open Source Projects such as Webiny, Next.js, React, etc.
@@ -12,7 +12,7 @@ We will continue creating more use-cases with Webiny. You can't find your favori
 
 ## Demo
 
-![Demo](/e-commerce-starter/demo.png)
+![Demo](/demo.png)
 
 To get started, clone the `e-commerce-starter` git repository.
 The starter will have a ready-made Next.js application, and the Ant Design UI Library with a couple of pre-build components and functionalities.
