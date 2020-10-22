@@ -2,6 +2,7 @@
 import { Button, Form } from 'antd';
 // React context
 import { CartContext, TotalContext } from '../context/Context';
+import { Col, Row } from 'antd';
 import React, { useContext, useState } from 'react';
 
 // Components
@@ -70,28 +71,42 @@ const CheckoutForm = () => {
     };
 
     return (
-        <Form
-            form={form}
-            name="checkout"
-            onFinish={handleSubmit}
-            scrollToFirstError
-        >
-            <BillingDetailsFields />
-            <CardElementContainer></CardElementContainer>{' '}
-            {checkoutError && (
-                <span style={{ color: 'red' }}>{checkoutError}</span>
-            )}
-            <br />
-            <Form.Item>
-                <Button
-                    type="primary"
-                    htmlType="submit"
-                    disabled={isProcessing}
+        <>
+            <Row>
+                <Col
+                    xs={{ span: 10, offset: 4 }}
+                    lg={{ span: 10, offset: 6 }}
+                    span={24}
                 >
-                    {isProcessing ? 'Processing...' : `Pay ${totalPrice}`}
-                </Button>
-            </Form.Item>
-        </Form>
+                    <Form
+                        form={form}
+                        name="checkout"
+                        onFinish={handleSubmit}
+                        scrollToFirstError
+                    >
+                        <BillingDetailsFields />
+                        <CardElementContainer></CardElementContainer>{' '}
+                        {checkoutError && (
+                            <span style={{ color: 'red' }}>
+                                {checkoutError}
+                            </span>
+                        )}
+                        <br />
+                        <Form.Item>
+                            <Button
+                                type="primary"
+                                htmlType="submit"
+                                disabled={isProcessing}
+                            >
+                                {isProcessing
+                                    ? 'Processing...'
+                                    : `Pay ${totalPrice}`}
+                            </Button>
+                        </Form.Item>
+                    </Form>
+                </Col>
+            </Row>
+        </>
     );
 };
 
