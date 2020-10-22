@@ -17,10 +17,9 @@ function LayoutComponent(props) {
                     className="site-layout-background"
                     style={{
                         padding: '24px 0',
-                        marginTop: 64,
+                        margin: 100,
                         display: 'flex',
-                        justifyContent: 'center',
-                        alignItems: 'center',
+                        alignContent: 'center',
                         minHeight: '500px',
                         background: '#fff',
                     }}

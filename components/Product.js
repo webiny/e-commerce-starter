@@ -45,7 +45,6 @@ export default function ProductCard(props) {
             size="small"
             style={{
                 margin: '20px 0.5rem',
-                width: '300px',
             }}
             actions={[
                 <Button
