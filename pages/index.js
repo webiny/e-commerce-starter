@@ -15,15 +15,28 @@ export default function Home() {
     const [query, updateQuery] = useState('');
     return (
         <>
-            <Row>
+            <Row gutter={[16, 24]}>
                 <Col
                     xs={{ span: 24, offset: 4 }}
-                    lg={{ span: 24, offset: 5 }}
+                    lg={{ span: 24, offset: 4 }}
                     span={24}
                 >
-                    <Title type="success" style={{ color: '#fa5723' }}>
+                    <Title level={2} style={{ color: '#fa5723' }}>
                         {' '}
-                        E-commerce site with Webiny Headless CMS
+                        E-commerce website build with Webiny Headless CMS,
+                        Next.js, and Stripe
+                    </Title>
+                </Col>
+            </Row>
+            <Row>
+                <Col
+                    xs={{ span: 12, offset: 6 }}
+                    lg={{ span: 24, offset: 8 }}
+                    span={24}
+                >
+                    <Title level={4} type="success">
+                        {' '}
+                        Buy Swag from the best Open Source Projects
                     </Title>
                 </Col>
             </Row>
@@ -37,8 +50,7 @@ export default function Home() {
                         placeholder="Search for products"
                         onSearch={(value) => console.log(value)}
                         style={{
-                            minWidth: 150,
-                            maxWidth: 600,
+                            maxWidth: 650,
                         }}
                         onChange={(e) =>
                             updateQuery(e.target.value.toLocaleLowerCase())
