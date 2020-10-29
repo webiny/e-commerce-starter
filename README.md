@@ -11,7 +11,7 @@ We will continue creating more use-cases with Webiny. You can't find your favori
 
 ## Demo
 
-![Demo](/demo-e-commerce-starter.gif)
+![Demo](/demo.png)
 
 To get started, clone the `e-commerce-starter` git repository.
 The starter will have a ready-made Next.js application, and the Ant Design UI Library with a couple of pre-build components and functionalities.
