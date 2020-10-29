@@ -44,7 +44,7 @@ export const Cart = () => {
                 renderItem={(item) => (
                     <List.Item key={('item: ', item.title)}>
                         <List.Item.Meta
-                            avatar={<Avatar src="/webiny.png" />}
+                            avatar={<Avatar src={item.image} />}
                             title={<a href={item.title}>{item.title}</a>}
                             description={item.description}
                         />
