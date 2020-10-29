@@ -42,7 +42,7 @@ Pre-build components:
 Clone the repository:
 
 ```
-git clone
+git clone https://github.com/webiny/e-commerce-starter
 cd e-commerce-starter
 ```
 
