@@ -29,10 +29,7 @@ export const Cart = () => {
             onCancel={() => setVisible(false)}
             width={1000}
             footer={[
-                <h3>
-                    Total Price:
-                    {/* ${totalPrice} */}
-                </h3>,
+                <h3>Total Price: ${totalPrice ? totalPrice : '0'}</h3>,
                 <Button type="primary" onClick={checkout}>
                     Checkout
                 </Button>,
