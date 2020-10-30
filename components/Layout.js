@@ -6,8 +6,11 @@ import HeaderComponent from './Header';
 // Ant Design
 import { Layout } from 'antd';
 import { Typography } from 'antd';
+
 const { Title } = Typography;
+
 const { Content, Footer } = Layout;
+
 function LayoutComponent(props) {
     const title = 'Webiny';
     return (
